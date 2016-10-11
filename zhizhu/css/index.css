@@ -1,0 +1,336 @@
+@charset 'usf-8';
+
+/*this page public*/
+
+.fs26 {
+    font-size: 26px;
+}
+
+
+/*
+*大图滚动
+*/
+
+.hy-roll {
+    height: 600px;
+}
+
+.roll-0 {
+    background: url('../img/bg-1.jpg') no-repeat;
+}
+
+.roll-1 {
+    background: url('../img/bg-2.jpg') no-repeat;
+}
+
+.roll-2 {
+    background: url('../img/bg-3.jpg') no-repeat;
+}
+
+.roll-3 {
+    background: url('../img/bg-4.jpg') no-repeat;
+}
+
+.roll-4 {
+    background: url('../img/bg-5.jpg') no-repeat;
+}
+
+.hy-roll-wrap li {
+    z-index: 1;
+    opacity: 0;
+    background-size: cover;
+}
+
+.hy-roll-wrap li.active {
+    z-index: 2;
+    opacity: 1;
+}
+
+.hy-roll-wrap hgroup {
+    position: relative;
+    top: 50%;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.hy-roll-wrap h2,
+.hy-roll-wrap h3 {
+    color: #fff;
+}
+
+.hy-roll-wrap h2 {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.hy-roll-wrap h3 {
+    font-weight: 200;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+
+/*导航选项*/
+
+.hy-roll-one .hy-roll-nav,
+.hy-roll-one .roll-nav-prev,
+.hy-roll-one .roll-nav-next {
+    display: none;
+}
+
+.hy-roll-nav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.hy-roll-nav a.active,
+.hy-roll-nav a:hover {
+    background-color: #fff;
+}
+
+.hy-roll-nav a:last-child,
+.business a:last-child {
+    margin-right: 0;
+}
+
+.roll-nav-prev,
+.roll-nav-next {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 60px;
+    margin-top: -30px;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.roll-nav-next {
+    -webkit-transform: rotate(180deg) translateX(-100%);
+    -moz-transform: rotate(180deg) translateX(-100%);
+    -ms-transform: rotate(180deg) translateX(-100%);
+    -o-transform: rotate(180deg) translateX(-100%);
+    transform: rotate(180deg) translateX(-100%);
+}
+
+.roll-nav-prev::before,
+.roll-nav-next::before {
+    display: block;
+    width: 42px;
+    height: 42px;
+    content: '';
+    -webkit-transform: rotate(45deg) translate(16px, -4px);
+    -moz-transform: rotate(45deg) translate(16px, -4px);
+    -ms-transform: rotate(45deg) translate(16px, -4px);
+    -o-transform: rotate(45deg) translate(16px, -4px);
+    transform: rotate(45deg) translate(16px, -4px);
+    border: 1px solid rgba(255, 255, 255, .8);
+}
+
+.hy-roll:hover .roll-nav-prev {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+}
+
+.hy-roll:hover .roll-nav-next {
+    -webkit-transform: rotate(180deg) translateX(0);
+    -moz-transform: rotate(180deg) translateX(0);
+    -ms-transform: rotate(180deg) translateX(0);
+    -o-transform: rotate(180deg) translateX(0);
+    transform: rotate(180deg) translateX(0);
+}
+
+
+/*
+* 主体
+*/
+
+.main {
+    min-width: 1000px;
+}
+
+.main-modular {
+    width: 1000px;
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-modular hgroup {
+    text-align: center;
+}
+
+
+/*核心服务*/
+
+.business a {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.business a:hover i,
+.case a:hover img {
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.business i {
+    display: inline-block;
+    width: 74px;
+    height: 74px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+
+/*我们的优势*/
+
+.advantage {
+    border: 1px solid #eee;
+}
+
+.advantage h3 {
+    font-size: 16px;
+    line-height: 50px;
+    width: 16%;
+    cursor: default;
+    text-align: center;
+    color: #333;
+    border-left: 4px solid #eee;
+    background-color: #eee;
+}
+
+.advantage li.active h3,
+.advantage h3:hover {
+    border-left: 4px solid #39f;
+    background-color: #fff;
+}
+
+.advantage div {
+    font-size: 16px;
+    line-height: 1.6em;
+    position: absolute;
+    top: 16px;
+    right: 1.5%;
+    left: 18.5%;
+    width: 80%;
+    height: 184px;
+    letter-spacing: 1px;
+    opacity: 0;
+    background-color: #fff;
+}
+
+.advantage li.active div,
+.advantage li:hover div {
+    z-index: 1;
+    opacity: 1;
+}
+
+
+/*案例*/
+
+.case a {
+    position: relative;
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 31%;
+    margin-right: 3.5%;
+    margin-bottom: 40px;
+}
+
+.case img {
+    width: 100%;
+}
+
+.case p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.case a:hover p {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.case a:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/*css 雪碧图 - 核心服务*/
+
+.i-business-web {
+    background: url('../img/i-business.png') no-repeat;
+    background-position: 0 0;
+}
+
+.i-business-app {
+    background: url('../img/i-business.png') no-repeat;
+    background-position: -74px 0;
+}
+
+.i-business-weixin {
+    background: url('../img/i-business.png') no-repeat;
+    background-position: -148px 0;
+}
+
+.i-business-plat {
+    background: url('../img/i-business.png') no-repeat;
+    background-position: -222px 0;
+}
+
+
+/*css3 媒体查询*/
+
+@media screen and (max-width: 1000px) {
+    .hy-roll {
+        height: 400px;
+    }
+    .hy-roll-wrap h2 {
+        font-size: 28px;
+    }
+    .hy-roll-wrap h3 {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+    .main {
+        min-width: 800px;
+    }
+    .main-modular {
+        width: 800px;
+    }
+}

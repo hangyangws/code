@@ -1,0 +1,67 @@
+@charset 'utf-8';
+
+/*页面定制化*/
+
+body {
+    scrollbar-face-color: #bbb;
+    scrollbar-shadow-color: #bbb;
+    scrollbar-3dlight-color: #bbb;
+    scrollbar-arrow-color: #bbb;
+    scrollbar-highlight-color: #ccc;
+    scrollbar-track-color: #ccc;
+    scrollbar-darkshadow-color: #bbb;
+}
+
+
+/*css scrollbar*/
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #bbb;
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #fff;
+}
+
+::-moz-selection {
+    color: #398;
+    background: #fff;
+}
+
+
+/*css selection*/
+
+::selection {
+    color: #39f;
+    background: #fff;
+}
+
+
+/*project ini*/
+
+.mw {
+    min-width: 800px;
+}
+
+.fcm {
+    color: #39f;
+}

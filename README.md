@@ -1,2 +1,2 @@
 # codeExample
-静态页面DOME
+- 静态文件DEMO

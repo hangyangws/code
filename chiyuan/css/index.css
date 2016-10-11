@@ -1,0 +1,723 @@
+@charset 'utf-8';
+
+/**
+ * 成都驰源all css
+ * created by hangyangws in 2016-05-20
+ */
+
+
+/**
+ * public组建
+ */
+
+.body {
+    min-width: 1200px;
+}
+
+.fcm {
+    color: #06c;
+}
+
+.wm {
+    width: 1000px;
+}
+
+.title {
+    font-size: 22px;
+    padding: 30px 0 15px;
+    text-align: center;
+    color: #333;
+}
+
+.float-side {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 64px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-right: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #fff;
+}
+
+.float-side li {
+    width: 100%;
+    height: 64px;
+}
+
+.chat-com {
+    top: 50%;
+    -o-transform: translate3d(100%, -50%, 0);
+    -ms-transform: translate3d(100%, -50%, 0);
+    -webkit-transform: translate3d(100%, -50%, 0);
+    transform: translate3d(100%, -50%, 0);
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: #fff;
+    -webkit-transition: -webkit-transform .4s, opacity, .4s;
+    -moz-transition: -moz-transform .4s, opacity, .4s;
+    -o-transition: -o-transform .4s, opacity, .4s;
+    transition: transform .4s, opacity, .4s;
+    opacity: 0;
+}
+
+.qq-chat:hover .chat-com {
+    -o-transform: translate3d(-176px, -50%, 0);
+    -ms-transform: translate3d(-176px, -50%, 0);
+    -webkit-transform: translate3d(-176px, -50%, 0);
+    transform: translate3d(-176px, -50%, 0);
+    opacity: 1;
+}
+
+.chat-com a {
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(255, 255, 255, .6);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+}
+
+.main {
+    padding-top: 75px;
+}
+
+.header {
+    z-index: 1;
+    background-color: #B5DCFB;
+}
+
+
+/* header */
+
+.page-index .page-index,
+.page-reg .page-reg,
+.page-qual .page-qual,
+.page-account .page-account,
+.page-audit .page-audit,
+.page-com-question .page-com-question {
+    color: #06c;
+}
+
+.page-index .page-index::before,
+.page-reg .page-reg::before,
+.page-qual .page-qual::before,
+.page-account .page-account::before,
+.page-audit .page-audit::before,
+.page-com-question .page-com-question::before,
+.head-nav a:hover::before {
+    width: 100%;
+}
+
+.head-con {
+    width: 1200px;
+}
+
+.logo-tit {
+    line-height: 25px;
+    top: 2px;
+}
+
+.head-nav {
+    line-height: 50px;
+}
+
+.head-nav a {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.head-nav a::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    content: '';
+    -webkit-transition: width .4s cubic-bezier(.21, 1.08, .66, 1.64);
+    -moz-transition: width .4s cubic-bezier(.21, 1.08, .66, 1.64);
+    -o-transition: width .4s cubic-bezier(.21, 1.08, .66, 1.64);
+    transition: width .4s cubic-bezier(.21, 1.08, .66, 1.64);
+    background-color: #06c;
+}
+
+.head-nav a:hover {
+    color: #06c;
+}
+
+
+/*图片宣传区域*/
+
+.top-banner {
+    min-height: 342px;
+}
+
+.carousel-wrap {
+    width: 9999px;
+    -webkit-transition: -webkit-transform .4s;
+    -moz-transition: -moz-transform .4s;
+    -o-transition: -o-transform .4s;
+    transition:  transform .4s;
+    max-height: 320px;
+}
+
+.roll-nav-prev,
+.roll-nav-next {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 60px;
+    margin-top: -30px;
+}
+
+.roll-nav-next {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.roll-nav-prev::before,
+.roll-nav-next::before {
+    display: block;
+    width: 42px;
+    height: 42px;
+    content: '';
+    -webkit-transform: rotate(45deg) translate(16px, -4px);
+    -moz-transform: rotate(45deg) translate(16px, -4px);
+    -ms-transform: rotate(45deg) translate(16px, -4px);
+    -o-transform: rotate(45deg) translate(16px, -4px);
+    transform: rotate(45deg) translate(16px, -4px);
+    border: 1px solid #fff;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+}
+
+.hy-roll-nav {
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .4));
+    background: -o-linear-gradient(transparent, rgba(0, 0, 0, .4));
+    background: -moz-linear-gradient(transparent, rgba(0, 0, 0, .4));
+    background: linear-gradient(transparent, rgba(0, 0, 0, .4));
+}
+
+.hy-roll-nav a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+.hy-roll-nav a.active,
+.hy-roll-nav a:hover {
+    background-color: #fff;
+}
+
+.hy-roll-nav a:last-child {
+    margin-right: 0;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #d3e7ef;
+}
+
+.foot-con {
+    width: 1000px;
+}
+
+.footer-nav {
+    line-height: 50px;
+}
+
+.footer-nav a {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #999;
+}
+
+.footer-nav a:first-child {
+    border-left: none;
+}
+
+
+/**
+ * index.html 首页
+ */
+
+
+/*服务模块*/
+
+.service a {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 30px;
+}
+
+.service img {
+    height: 60px;
+}
+
+
+/*优秀项目推荐*/
+
+.advantage-container {
+    background: url(../img/index/advantage-banner.jpg) no-repeat center center;
+}
+
+.adv-detail span {
+    font-size: 16px;
+    line-height: 60px;
+    display: inline-block;
+    width: 195px;
+    letter-spacing: 1px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    background-color: #B5DCFB;
+}
+
+.adv-detail span:nth-child(5n) {
+    border-right: 3px solid #fff;
+}
+
+.adv-detail span:nth-child(n+11) {
+    border-bottom: 3px solid #fff;
+}
+
+.adv-detail span:hover {
+    background-color: #d5e6f5;
+}
+
+
+/*选择我们的理由*/
+
+.reason {
+    min-height: 400px;
+}
+
+
+/*文章展示*/
+
+.article {
+    padding: 60px 0;
+    background: url(../img/index/banner-bottom.jpg) no-repeat center center;
+}
+
+.art-m-detail {
+    margin-right: 160px;
+}
+
+.art-title {
+    width: 220px;
+    color: #ae6c07;
+}
+
+.art-m-list li {
+    margin-left: 14px;
+    padding-bottom: 10px;
+    list-style: decimal;
+}
+
+.art-m-list li:hover {
+    text-indent: 10px;
+}
+
+
+/**
+ * reg.html 公司注册页面
+ */
+
+
+/*在线核实*/
+
+.reg-form label {
+    border: 2px solid #eb862b;
+}
+
+.form-input {
+    line-height: 30px;
+    width: 350px;
+}
+
+.reg-icon-1 {
+    background: url(../img/reg/icon-build.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.reg-icon-2 {
+    background: url(../img/reg/icon-tel.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.reg-submit {
+    width: 150px;
+    height: 54px;
+    background: url(../img/reg/check.jpg) no-repeat center center;
+}
+
+
+/*全免费模块*/
+
+.reg-free {
+    background-color: #cee9f4;
+}
+
+
+/*选择驰源注册公司*/
+
+.reg-intro {
+    background-color: #b4dcfa;
+}
+
+
+/*问题解读*/
+
+.section-title {
+    color: #fff;
+    background: url(../img/reg/icon-back.png) no-repeat center 8px;
+}
+
+.question-list {
+    padding-left: 45px;
+}
+
+.req-q-l-d-icon {
+    background: url(../img/reg/icon-q.png) no-repeat center center;
+}
+
+.req-q-button {
+    margin: 0 0 50px 0;
+    padding: 0 80px 0 0;
+}
+
+.req-q-button a,
+.req-q-button span {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.req-q-b-more {
+    line-height: 40px;
+    background-color: #d69017;
+}
+
+.req-q-b-tel {
+    line-height: 40px;
+    background-color: #096ab5;
+}
+
+
+/**
+ * qualification.html 资质代办页面
+ */
+
+
+/*服主营业务模块*/
+
+.work-container {
+    min-height: 320px;
+}
+
+
+/*优秀项目推荐*/
+
+.pass {
+    background-color: #3f77b0;
+}
+
+.pass-title {
+    color: #fff;
+    text-shadow: #333 3px 3px 1px;
+}
+
+
+/*资质代办优势*/
+
+.qua-a-container img {
+    width: 70%;
+    margin-top: 20px;
+}
+
+
+/*资质代办相关解读*/
+
+.qua-describe {
+    background-color: #aacae9;
+}
+
+.qua-d-r-list li {
+    border-bottom: 1px solid #c6ddee;
+}
+
+
+/**
+ * account.html 代理记账页面
+ */
+
+
+/*阶段模块*/
+
+.audit-step {
+    background-color: #99c9e0;
+}
+
+.audit-step img {
+    width: 86%;
+}
+
+
+/*不拼低价模块*/
+
+.account-price img {
+    width: 90%;
+}
+
+
+/*选择我们的理由*/
+
+.account-why {
+    min-height: 400px;
+    background-color: #b4dcfa;
+}
+
+
+/*问题解读*/
+
+.account-question {
+    height: 330px;
+}
+
+.account-question li {
+    display: inline-block;
+    width: 250px;
+    margin-right: 18px;
+    margin-bottom: 6px;
+    padding-left: 22px;
+    background: url(../img/account/icon-q.png) no-repeat 0 0;
+}
+
+.account-q-right {
+    padding: 20px 50px;
+    background-color: #eee;
+}
+
+.account-q-r-title {
+    top: 20px;
+    left: 20px;
+    width: 200px;
+}
+
+.account-q-r-icon {
+    width: 50px;
+    height: 50px;
+    background: url(../img/account/icon-wa.png) no-repeat center center;
+    background-size: contain;
+}
+
+.account-q-r-f-left {
+    float: left;
+    width: 150px;
+}
+
+.account-q-r-f-code {
+    float: left;
+    width: 80px;
+    height: 40px;
+}
+
+.account-q-r-f-img {
+    float: right;
+    width: 70px;
+    height: 40px;
+}
+
+.account-q-r-f-right {
+    float: right;
+    width: 150px;
+}
+
+.account-q-r-f-tel {
+    width: 150px;
+    height: 40px;
+}
+
+.account-q-r-f-submit {
+    padding: 8px 0;
+    background-color: #eb990d;
+}
+
+
+/**
+ * audit.html 审计验资页面
+ */
+
+
+/*服主营业务模块*/
+
+.audit-card span {
+    font-size: 20px;
+    line-height: 96px;
+    display: inline-block;
+    width: 163px;
+    background: url(../img/audit/card.png) no-repeat center center;
+}
+
+
+/*阶段模块*/
+
+.easy-do-audit {
+    background: url(../img/audit/banner-bottom.png) no-repeat center center;
+    background: cover;
+}
+
+.audit-s-form {
+    background-color: rgba(70, 136, 234, 0.3);
+}
+
+.audit-s-form label {
+    margin-bottom: 10px;
+}
+
+.audit-s-form label input,
+.audit-s-form label textarea {
+    margin-left: 20px;
+    width: 330px;
+    padding: 5px;
+    text-align: left;
+}
+
+.audit-s-f-btn button {
+    line-height: 30px;
+    float: right;
+    margin-right: 44px;
+    width: 100px;
+    margin-left: 10px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #115b98;
+}
+
+
+/**
+ * 常见问题页面
+ */
+
+.aside {
+    width: 250px;
+}
+
+.aside.fixed {
+    position: fixed;
+    /*chrome 内核 浏览器 position: fixed 防止抖动*/
+    -webkit-transform: translateZ(0);
+    top: 80px;
+}
+
+.cq-tree .active {
+    height: 20px;
+}
+
+.cq-list {
+    cursor: pointer;
+}
+
+.cq-tree .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 6px;
+    cursor: pointer;
+    border-top: 6px solid transparent;
+    border-right: none;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid #06c;
+}
+
+.active .arrow {
+    border-top: 8px solid #06c;
+    border-right: 6px solid transparent;
+    border-bottom: none;
+    border-left: 6px solid transparent;
+}
+
+.cq-tree li {
+    margin-bottom: 8px;
+}
+
+.arrow-trigger {
+    margin-bottom: 4px;
+}
+
+.cq-tree ul {
+    margin-bottom: 18px;
+    margin-left: 2em;
+    margin-top: 10px;
+}
+
+.cq-l-contact {
+    line-height: 78px;
+    height: 62px;
+    text-indent: 38px;
+    background: #286aad url(../img/com-question/icon-tel.png) no-repeat 10px 10px;
+    background-size: 40px 40px;
+}
+
+.cq-l-c-container {
+    border: 1px solid #286aad;
+}
+
+.cq-l-c-list {
+    margin-bottom: 8px;
+}
+
+.cq-l-c-l-tel {
+    height: 40px;
+    padding-left: 60px;
+    background: url(../img/com-question/icon-tel-down.png) no-repeat 0 0;
+}
+
+.cq-lcl-tel-no {
+    color: #d07b21;
+}
+
+.question-con {
+    width: 740px;
+}
+
+.question-each {
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.article-tit {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+}
+
+.article-tit:target + div {
+    color: #fff;
+    background-color: #bbb;
+}
+
+.article-con {
+    line-height: 1.6em;
+    padding: 5px;
+    letter-spacing: .6px;
+    border-radius: 4px;
+}

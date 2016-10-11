@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>入口选择-纪委监审处</title>
+
+    <meta name="author" content="suse" />
+    <meta name="keywords" content="四川理工 监审处" />
+    <meta name="Copyright" content="©2009-2016 Copyright ALL Rights Reserved" />
+    <meta name="description" content="四川理工学院纪委监审处" />
+    <meta name="robots" content="index,follow" />
+    <meta name="renderer" content="webkit" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="full-screen" content="yes" />
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="x5-orientation" content="portrait" />
+    <meta name="x5-fullscreen" content="true" />
+    <meta name="x5-page-mode" content="app" />
+    <meta name="browsermode" content="application" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <link rel="shortcut icon" href="img/shortcut.png" type="image/x-icon" sizes="16x16 32x32" />
+    <link rel="Bookmark" href="img/shortcut.png" />
+
+    <!-- basic -->
+    <link rel="stylesheet" href="css/basic.css" />
+    <!-- publxy -->
+    <link rel="stylesheet" href="css/public.css" />
+    <!-- this -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+
+    <div id="header">
+      <div class="logo-wrap">
+        <a href="http://www.suse.edu.cn" target="_blank" class="clear">
+          <div class="logo-img left"></div>
+          <div class="logo-name right">
+            <div class="logo-name-zh"></div>
+            <div class="logo-name-en">SICHUAN UNIVERSITY OF SCIENCE &amp; ENGIEERING</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div id="main">
+      <div class="welcome" >欢迎来到四川理工学院纪委监审处 现在时间:<em id="time"></em></div>
+      <div class="con-wrap clear">
+        <div class="con-img">
+          <img src="img/suse.jpg" alt="suse" />
+        </div>
+        <div class="con-enter">
+          <div class="enter-wrap">
+            <a href="jwjs.html" class="transtion" target="_blank">纪检监察</a>
+            <a href="sj.html" class="transtion" target="_blank">审计</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div class="footer-wrap">&copy;2009-2016 Copyright ALL Rights Reserved</div>
+    </div>
+
+    <!-- libray -->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+
+      var time = (function () {
+
+        var wel = document.getElementById('time'),
+            time;
+
+        return {
+          ini : function () {
+            time = new Date();
+            time = time.toLocaleString( );
+            wel.innerHTML = time;
+          }
+        };
+      }());
+
+      time.ini();
+
+      setInterval(function () {
+        return time.ini();
+      }, 1000);
+    </script>
+  </body>
+</html>

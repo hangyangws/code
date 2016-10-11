@@ -1,0 +1,123 @@
+@charset 'utf-8';
+
+/*header*/
+#header, #footer {
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0
+}
+
+a {
+  display: block;
+  width: 390px;
+  height: 80px;
+  margin: 0 auto
+}
+
+.logo-img {
+  width: 80px;
+  height: 80px;
+  background: url('../img/suse_logo.png') no-repeat
+}
+
+.logo-name {
+  height: 80px
+}
+
+.logo-name-zh {
+  width: 300px;
+  height: 50px;
+  margin-top: 5px;
+  background: url('../img/suse_logo_title.png') no-repeat
+}
+
+.logo-name-en {
+  width: 300px;
+  height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #063
+}
+
+/*content*/
+#main {
+  margin-bottom: 50px
+}
+
+.welcome {
+  text-align: center;
+  height: 50px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.welcome em {
+  letter-spacing: 0;
+  position: relative;
+  left: 4px
+}
+
+.con-wrap {
+  width: 900px;
+  overflow: hidden;
+  margin: 0 auto
+}
+
+.con-img, .con-enter {
+  position: relative;
+  float: left;
+  width: 450px;
+  height: 320px
+}
+
+.con-img {
+  box-shadow: 0 0 12px #999;
+  overflow: hidden
+}
+
+.con-img img {
+  width: 100%;
+  height: 100%
+}
+
+.enter-wrap {
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  margin-top: -55px
+}
+
+.enter-wrap a {
+  display: block;
+  height: 43px;
+  line-height: 45px;
+  border-bottom: 2px solid #09c;
+  width: 154px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: 100;
+  background-color: #0cc;
+  margin-bottom: 20px;
+  color: #fff
+}
+
+.enter-wrap a:hover {
+  border-bottom: 2px solid #09f;
+  -moz-box-shadow: 0 1px 1px #09f;
+  -webkit-box-shadow: 0 1px 1px #09f;
+  box-shadow: 0 1px 1px #09f;
+  letter-spacing: 1px
+}
+
+/*footer*/
+#footer {
+  width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: none;
+  border-top: 1px solid #d6d6d6
+}

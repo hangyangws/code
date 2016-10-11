@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.m-nav, .m-page, .m-act {
+  margin-top: 10px;
+  padding: 0 10px
+}
+
+/*导航*/
+.m-nav, .m-sea {
+  height: 29px;
+  line-height: 29px;
+  border-bottom: 1px solid #e0e0e0
+}
+
+.m-sea {
+  padding: 10px 20px
+}
+
+.m-nav li:after {
+  content: '>';
+  margin: 0 10px
+}
+
+.m-nav li:last-child:after {
+  display: none
+}
+
+/*文章列表*/
+.m-act li {
+  position: relative;
+  border-bottom: 1px dashed #e0e0e0;
+  line-height: 32px;
+}
+
+.m-act li:nth-child(5n) {
+  margin-bottom: 20px
+}
+
+.m-act li a {
+  text-indent: 10px;
+  font-size: 15px;
+  width: 650px
+}
+
+.m-act li span {
+  width: 100px;
+  text-align: center;
+  font-size: 12px
+}
+
+.m-act li:last-child, .m-act li:nth-child(5n) {
+  border-bottom: none
+}
+
+/*文章*/
+.a-tit {
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px
+}
+
+.a-tit h2, .a-tit dl {
+  text-align: center;
+  height: 30px;
+  color: #444;
+  line-height: 30px;
+  font-weight: 500
+}
+
+.a-tit dt, .a-tit dd {
+  color: #666;
+  font-size: 13px;
+  display: inline-block
+}
+
+.a-tit dt:after {
+  content: ' :'
+}
+
+.a-tit dd {
+  margin-right: 10px
+}
+
+.a-con {
+  font-size: 15px;
+  color: #444;
+  line-height: 30px
+}
+
+.a-con p {
+  text-indent: 30px;
+  margin: 20px 0
+}
+
+.a-con img {
+  max-width: 640px;
+  display: block;
+  margin: 0 auto
+}
+
+/*分页*/
+.m-page {
+  border-top: 1px solid #e0e0e0
+}
+
+.m-page li {
+  margin: 10px 10px 0 0;
+  height: 30px;
+  cursor: default;
+  line-height: 26px
+}
+
+.m-page li a {
+  display: block;
+  padding: 0 8px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0
+}
+
+.m-page li a:hover, .m-act li:hover, .m-type>li {
+  background-color: #f0f0f0
+}
+
+.m-act li:before {
+  position: absolute;
+  content: '';
+  top: 16px;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #999
+}
+
+/*分类*/
+.m-type {
+  margin-top: 39px;
+  border-left: 1px dashed #e0e0e0;
+  padding-left: 10px
+}
+
+.m-type>li {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 20px
+}
+
+.m-type>li ul {
+  font-size: 14px;
+  margin: 4px 0 0 8px
+}
+
+.m-type li li:before {
+  display: inline-block;
+  content: '';
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: -2px;
+  border-left: 1px dashed #666;
+  border-bottom: 1px dashed #666
+}
+
+/*public*/
+.a {
+  color: #666
+}
+
+.a:hover {
+  color: #333;
+  text-shadow: 1px 1px 5px #ccc
+}

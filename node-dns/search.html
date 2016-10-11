@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>DNS解析器</title>
+    <style>
+    body {
+        padding: 0;
+        font-family: '微软雅黑';
+        font-size: 14px;
+        color: #666
+    }
+
+    h2 {
+        padding: 0;
+        font-weight: normal;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        margin: 50px 0 20px 0
+    }
+
+    form {
+        text-align: center
+    }
+
+    input {
+        display: inline-block
+    }
+    </style>
+</head>
+
+<body>
+    <h2>DNS域名解析器 基于Node.js --- hangyangws</h2>
+    <form action="/parse" method="POST">
+        <input type="text" placeholder="输入域名" name="urlName" />
+        <input type="submit" value="查询" />
+    </form>
+</body>
+
+</html>

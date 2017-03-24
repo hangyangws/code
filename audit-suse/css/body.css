@@ -1,281 +1,305 @@
-@charset "utf-8";
-
+@charset 'utf-8';
 #main {
-  width: 1100px;
-  margin: 0 auto
+    width: 1100px;
+    margin: 0 auto;
 }
+
 
 /*左 主区域*/
+
 .m-con {
-  width: 772px
+    width: 772px;
 }
+
 
 /*轮播*/
-.m-carousel, .m-img, .m-img li {
-  /*hy change*/
-  height: 420px;
-  width: 762px
+
+.m-carousel,
+.m-img,
+.m-img li {
+    width: 762px;
+    /*hy change*/
+    height: 420px;
 }
 
-.m-carousel, .info-each>div>ul, .nav>li, .m-img a, .m-i-con li {
-  position: relative
+.m-carousel,
+.info-each > div > ul,
+.nav > li,
+.m-img a,
+.m-i-con li {
+    position: relative;
 }
 
 .m-img {
-  background-color: #d1d6e2
+    background-color: #d1d6e2;
 }
 
 #sj .m-img {
-  background-color: #ddddb5
+    background-color: #ddddb5;
 }
 
-.m-img, .m-img li, .m-img img {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0
+.m-img,
+.m-img li,
+.m-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 .m-img li {
-  /*hy change*/
-  z-index: -1;
-  left: 10px
+    /*hy change*/
+    z-index: -1;
+    left: 10px;
 }
 
 .m-img li.active {
-  left: 0;
-  z-index: 1
+    z-index: 1;
+    left: 0;
 }
 
 .m-img a {
-  display: block;
-  /*hy change*/
-  height: 420px
+    display: block;
+    /*hy change*/
+    height: 420px;
 }
 
 .m-img img {
-  display: block;
-  width: 762px;
-  /*hy change*/
-  /*height: 300px*/
+    display: block;
+    width: 762px;
+    /*hy change*/
+    /*height: 300px*/
 }
 
 .m-img span {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 30px;
-  line-height: 30px;
-  padding-left: 13px;
-  width: 749px;
-  color: #fff;
-  background-color: #999;
-  background-color: rgba(0, 0, 0, .4)
+    line-height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 749px;
+    height: 30px;
+    padding-left: 13px;
+    color: #fff;
+    background-color: #999;
+    background-color: rgba(0, 0, 0, .4);
 }
 
 .m-img-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
-  height: 30px
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    height: 30px;
 }
 
 .m-img-btn li {
-  background-color: #fff;
-  width: 30px;
-  float: left;
-  cursor: pointer;
-  margin-top: 13px;
-  margin-right: 13px;
-  height: 4px
+    float: left;
+    width: 30px;
+    height: 4px;
+    margin-top: 13px;
+    margin-right: 13px;
+    cursor: pointer;
+    background-color: #fff;
 }
+
 
 /*主体信息*/
+
 .info-each {
-  margin-right: 10px;
-  width: 376px;
-  overflow: hidden;
-  background-color: #fff;
-  margin-top: 10px
+    overflow: hidden;
+    width: 376px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #fff;
 }
 
-.info-each>h3 {
-  font-weight: normal;
-  height: 30px;
-  line-height: 30px;
-  padding: 0 13px;
-  color: #333;
-  background-color: #d1d6e2
+.info-each > h3 {
+    font-weight: normal;
+    line-height: 30px;
+    height: 30px;
+    padding: 0 13px;
+    color: #333;
+    background-color: #d1d6e2;
 }
 
-#sj .info-each>h3 {
-  background-color: #ddddb5
+#sj .info-each > h3 {
+    background-color: #ddddb5;
 }
 
 .m-i-con {
-  height: 185px;
-  overflow: hidden
+    overflow: hidden;
+    height: 185px;
 }
 
 #sj .m-i-con {
-  height: 247px;
-  overflow: hidden
+    overflow: hidden;
+    height: 247px;
 }
 
-.info-each>h3 a, .m-i-con li a {
-  color: #666
+.info-each > h3 a,
+.m-i-con li a {
+    color: #666;
 }
 
 .m-i-con li {
-  height: 30px;
-  line-height: 30px;
-  padding: 0 13px;
-  border-bottom: 1px dashed #e0e0e0
+    line-height: 30px;
+    height: 30px;
+    padding: 0 13px;
+    border-bottom: 1px dashed #e0e0e0;
 }
 
 .m-i-con li:before {
-  content: '';
-  position: absolute;
-  top: 14px;
-  left: 6px;
-  width: 2px;
-  height: 2px
+    position: absolute;
+    top: 14px;
+    left: 6px;
+    width: 2px;
+    height: 2px;
+    content: '';
 }
 
 .m-i-con li:last-child {
-  border-bottom: none
+    border-bottom: none;
 }
 
 .m-i-con li a {
-  width: 260px
+    width: 260px;
 }
 
-.info-each, .nav>li ul {
-  -moz-box-shadow: 1px 1px 2px #d1d6e2;
-  -webkit-box-shadow: 1px 1px 2px #d1d6e2;
-  box-shadow: 1px 1px 2px #d1d6e2
+.info-each,
+.nav > li ul {
+    -webkit-box-shadow: 1px 1px 2px #d1d6e2;
+    -moz-box-shadow: 1px 1px 2px #d1d6e2;
+    box-shadow: 1px 1px 2px #d1d6e2;
 }
 
-#sj .info-each, #sj .nav>li ul {
-  -moz-box-shadow: 1px 1px 2px #ddddb5;
-  -webkit-box-shadow: 1px 1px 2px #ddddb5;
-  box-shadow: 1px 1px 2px #ddddb5
+#sj .info-each,
+#sj .nav > li ul {
+    -webkit-box-shadow: 1px 1px 2px #ddddb5;
+    -moz-box-shadow: 1px 1px 2px #ddddb5;
+    box-shadow: 1px 1px 2px #ddddb5;
 }
 
-.info-each:hover, #sj .info-each:hover {
-  -moz-box-shadow: 1px 1px 4px #999;
-  -webkit-box-shadow: 1px 1px 4px #999;
-  box-shadow: 1px 1px 4px #999
+.info-each:hover,
+#sj .info-each:hover {
+    -webkit-box-shadow: 1px 1px 4px #999;
+    -moz-box-shadow: 1px 1px 4px #999;
+    box-shadow: 1px 1px 4px #999;
 }
 
-.m-i-con li a:hover, .info-each>h3 a:hover {
-  color: #f63
+.m-i-con li a:hover,
+.info-each > h3 a:hover {
+    color: #f63;
 }
 
 .m-i-con li span {
-  width: 80px;
-  text-align: right;
-  font-size: 12px
+    font-size: 12px;
+    width: 80px;
+    text-align: right;
 }
 
-.info-each>div {
-  height: 215px
+.info-each > div {
+    height: 215px;
 }
 
-#sj .info-each>div {
-  height: 247px
+#sj .info-each > div {
+    height: 247px;
 }
 
-.info-each>div>ul>li {
-  width: 70px;
-  height: 30px;
-  cursor: pointer;
-  margin-left: 13px
+.info-each > div > ul > li {
+    width: 70px;
+    height: 30px;
+    margin-left: 13px;
+    cursor: pointer;
 }
 
-.info-each>div>ul>li>span {
-  display: inline-block;
-  text-align: center;
-  width: 70px;
-  height: 28px;
-  line-height: 28px;
-  border-bottom: 2px solid #fff;
-  color: #666
+.info-each > div > ul > li > span {
+    line-height: 28px;
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    text-align: center;
+    color: #666;
+    border-bottom: 2px solid #fff;
 }
 
-.info-each>div>ul>li.live>span, .info-each>div>ul>li:hover>span {
-  border-bottom: 2px solid #f63;
-  color: #f63
+.info-each > div > ul > li.live > span,
+.info-each > div > ul > li:hover > span {
+    color: #f63;
+    border-bottom: 2px solid #f63;
 }
 
-#sj .info-each>div>ul>li.live>span, #sj .info-each>div>ul>li:hover>span {
-  border-bottom: 2px solid #c6c624
+#sj .info-each > div > ul > li.live > span,
+#sj .info-each > div > ul > li:hover > span {
+    border-bottom: 2px solid #c6c624;
 }
 
-.info-each li>ul {
-  z-index: 1;
-  position: absolute;
-  top: 30px;
-  left: 4px;
-  width: 376px;
-  height: 185px;
-  background-color: #fff
+.info-each li > ul {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 4px;
+    width: 376px;
+    height: 185px;
+    background-color: #fff;
 }
 
-#sj .info-each li>ul {
-  height: 217px
+#sj .info-each li > ul {
+    height: 217px;
 }
 
-.info-each li.live>ul {
-  left: 0;
-  z-index: 2
+.info-each li.live > ul {
+    z-index: 2;
+    left: 0;
 }
+
 
 /*右 侧边栏*/
+
 .m-side {
-  width: 308px
+    width: 308px;
 }
 
 .m-side .info-each {
-  margin-right: 0
+    margin-right: 0;
 }
 
-.m-side .info-each, .s-btn, .s-net {
-  width: 307px
+.m-side .info-each,
+.s-btn,
+.s-net {
+    width: 307px;
 }
 
 .m-side .m-i-con li a {
-  width: 200px
+    width: 200px;
 }
 
 .s-btn a {
-  margin-top: 10px;
-  height: 33px;
-  text-align: right;
-  color: #fff;
-  font-size: 15px;
-  padding-right: 13px;
-  line-height: 33px;
-  background-color: #69f;
-  display: block
+    font-size: 15px;
+    line-height: 33px;
+    display: block;
+    height: 33px;
+    margin-top: 10px;
+    padding-right: 13px;
+    text-align: right;
+    color: #fff;
+    background-color: #69f;
 }
 
 .s-btn a:hover {
-  letter-spacing: 1px
+    letter-spacing: 1px;
 }
 
 .s-btn a span {
-  float: left
+    float: left;
 }
 
 .s-net dt {
-  color: #333;
-  font-size: 15px
+    font-size: 15px;
+    color: #333;
 }
 
 .s-net dd {
-  text-indent: 15px;
-  margin: 4px 0 10px 0
+    margin: 4px 0 10px 0;
+    text-indent: 15px;
 }

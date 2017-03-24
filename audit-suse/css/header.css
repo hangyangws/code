@@ -1,200 +1,218 @@
-@charset "utf-8";
-
+@charset 'utf-8';
 #header {
-  width: 100%
+    width: 100%;
 }
 
 .h-con {
-  height: 150px;
-  background: url(../img/header_bg.jpg) no-repeat;
-  background-size: 100% 100%;
-  background-size: cover
+    height: 150px;
+    background: url(../img/header_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
 }
 
 #sj .h-con {
-  background: url(../img/sj_bg.jpg) no-repeat
+    background: url(../img/sj_bg.jpg) no-repeat;
 }
 
 .h-title {
-  padding-top: 40px;
-  height: 110px
+    height: 110px;
+    padding-top: 40px;
 }
 
 .h-title div {
-  background: url(../img/jwjs.png) no-repeat;
-  background-size: cover;
-  height: 60px;
-  width: 500px
+    width: 500px;
+    height: 60px;
+    background: url(../img/jwjs.png) no-repeat;
+    background-size: cover;
 }
 
 #sj .h-title div {
-  background: url(../img/sj.png) no-repeat
+    background: url(../img/sj.png) no-repeat;
 }
 
 .h-title ul {
-  margin-top: 4px;
-  text-align: center
+    margin-top: 4px;
+    text-align: center;
 }
 
 .h-title ul li {
-  display: inline-block;
-  margin-left: 15px;
-  height: 34px;
-  font-weight: 200;
-  font-size: 18px;
-  color: #fff;
-  line-height: 34px
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 34px;
+    display: inline-block;
+    height: 34px;
+    margin-left: 15px;
+    color: #fff;
 }
 
 .h-title ul li:first-child {
-  margin-left: 0
+    margin-left: 0;
 }
+
 
 /*anv*/
+
 .h-nav {
-  -moz-box-shadow: 0 0 1px #fff;
-  -webkit-box-shadow: 0 0 1px #fff;
-  box-shadow: 0 0 1px #fff;
-  background-color: #555
+    background-color: #555;
+    -webkit-box-shadow: 0 0 1px #fff;
+    -moz-box-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 1px #fff;
 }
 
-.nav>li {
-  position: relative;
-  height: 35px;
-  width: 100px;
-  text-align: center;
-  line-height: 35px;
-  float: left
+.nav > li {
+    line-height: 35px;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 35px;
+    text-align: center;
 }
 
-.nav>li>a {
-  width: 100px;
-  height: 35px;
-  display: block;
-  position: absolute;
-  color: #fff;
-  font-size: 16px;
-  background-color: #555;
-  z-index: 3
+.nav > li > a {
+    font-size: 16px;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    background-color: #555;
 }
 
-.nav>li:hover>a {
-  background-color: #444
+.nav > li:hover > a {
+    background-color: #444;
 }
 
-.nav>li ul {
-  position: absolute;
-  width: 100px;
-  height: 0;
-  z-index: 2;
-  overflow: hidden;
-  left: 0;
-  top: 20px;
-  background-color: #fff
+.nav > li ul {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 0;
+    overflow: hidden;
+    width: 100px;
+    height: 0;
+    background-color: #fff;
 }
 
-.nav>li:hover ul {
-  height: auto;
-  top: 35px
+.nav > li:hover ul {
+    top: 35px;
+    height: auto;
 }
 
 .nav li li:hover {
-  background-color: #d1d6e2
+    background-color: #d1d6e2;
 }
 
 #sj .nav li li:hover {
-  background-color: #ddddb5
+    background-color: #ddddb5;
 }
 
 .nav li li a {
-  color: #666;
-  font-size: 15px
+    font-size: 15px;
+    color: #666;
 }
 
+
 /*hearch*/
+
 .search {
-  background-color: #fff;
-  margin-top: 1px;
-  height: 33px
+    height: 33px;
+    margin-top: 1px;
+    background-color: #fff;
 }
 
 .search input[type='text'] {
-  width: 255px;
-  margin: 0 10px;
-  height: 33px;
-  border: none;
-  color: #666
+    width: 255px;
+    height: 33px;
+    margin: 0 10px;
+    color: #666;
+    border: none;
 }
 
-.search  input[type='submit'], .s-btn a span {
-  display: inline-block;
-  width: 33px;
-  height: 33px;
-  border: none;
-  background-color: #f66
+.search input[type='submit'],
+.s-btn a span {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border: none;
+    background-color: #f66;
 }
 
 #sj .search input[type='submit'] {
-  background-color: #cc6
+    background-color: #cc6;
 }
 
 .search input[type='submit']:hover {
-  background-color: #f63
+    background-color: #f63;
 }
 
+
 /*footr*/
+
 #footer {
-  width: 1100px;
-  margin: 60px auto;
-  text-align: center;
-  padding-top: 30px;
-  border-top: 2px solid #f63
+    width: 1100px;
+    margin: 60px auto;
+    padding-top: 30px;
+    text-align: center;
+    border-top: 2px solid #f63;
 }
 
 #sj #footer {
-  border-top: 2px solid #c6c624
+    border-top: 2px solid #c6c624;
 }
 
 #footer a {
-  color: #666;
-  margin: 0 10px
+    margin: 0 10px;
+    color: #666;
 }
+
 
 /*pubic*/
-#sj .search input[type='submit']:hover, #sj .m-img-btn li.active, #sj .m-img-btn li:hover, #sj .search  input[type='submit']:hover, #sj .m-i-con li:before {
-  background-color: #c6c624
+
+#sj .search input[type='submit']:hover,
+#sj .m-img-btn li.active,
+#sj .m-img-btn li:hover,
+#sj .search input[type='submit']:hover,
+#sj .m-i-con li:before {
+    background-color: #c6c624;
 }
 
-#sj .m-i-con li a:hover, #sj .info-each>h3 a:hover, #sj .info-each>div>ul>li.live>span, #sj .info-each>div>ul>li:hover>span {
-  color: #c6c624
+#sj .m-i-con li a:hover,
+#sj .info-each > h3 a:hover,
+#sj .info-each > div > ul > li.live > span,
+#sj .info-each > div > ul > li:hover > span {
+    color: #c6c624;
 }
 
-.m-img-btn li.active, .m-img-btn li:hover, .search  input[type='submit']:hover, .m-i-con li:before {
-  background-color: #f63
+.m-img-btn li.active,
+.m-img-btn li:hover,
+.search input[type='submit']:hover,
+.m-i-con li:before {
+    background-color: #f63;
 }
 
-
-.h-title, .h-nav-con {
-  width: 1100px;
-  margin: 0 auto
+.h-title,
+.h-nav-con {
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .i-def {
-  background: url('../img/icon.png');
-  background-position: 0 0
+    background: url('../img/icon.png');
+    background-position: 0 0;
 }
 
 .i-tel {
-  background: url('../img/icon.png');
-  background-position: 0 -33px
+    background: url('../img/icon.png');
+    background-position: 0 -33px;
 }
 
 .i-sea {
-  background: url('../img/icon.png');
-  background-position: 0 -66px
+    background: url('../img/icon.png');
+    background-position: 0 -66px;
 }
 
 .i-tes {
-  background: url('../img/icon.png');
-  background-position: 0 -99px
+    background: url('../img/icon.png');
+    background-position: 0 -99px;
 }

@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background - color: #333;
+}
+
+table {
+    display: none;
+}
+
+#holder {
+    width: 500 px;
+    height: 500 px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: -webkit - linear - gradient(top, transparent 19 px, #333 20px);
+    background-size: 100% 20px;
+    background-color: #ccc;
+}
+
+#holder: before {
+    content: '';
+    position: absolute;
+    width: 500 px;
+    height: 500 px;
+    background: -webkit - linear - gradient(left, transparent 19 px, #333 20px);
+    background-size: 20px 100%;
+}

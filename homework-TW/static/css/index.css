@@ -212,6 +212,7 @@
 /*add resources*/
 
 .add-resources {
+    z-index: 2;
     top: 100%;
     width: 80%;
     max-width: 800px;

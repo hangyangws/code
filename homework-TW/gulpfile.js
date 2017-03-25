@@ -67,7 +67,7 @@ gulp.task('minJs', ['concatJs'], function() {
         .pipe(gulp.dest(myPath.minToJs)); // 输出
 });
 
-// 监听 CSS 文件改动
+// 监听 CSS/JS 文件改动
 gulp.task('watch', function() {
     gulp.watch(myPath.minFromCss, ['minCss']);
     gulp.watch(myPath.minFromJs, ['minJs']);

@@ -1,6 +1,5 @@
-# Homework of thoughtWorks
----
-- 本项目是“我的“系列的H5宣传页面，提供我的花的入口，和我的菜的介绍
-- index.html文件：为项目入口文件(可以直接用浏览器打开)
-- static文件夹：为CSS IMG JavaScript等静态文件
-- ./static/dist 为压缩后静态文件
+# 面试 thoughtWorks的家庭作业
+
+### 运行方式
+
+在当前目录运行`gulp`命令

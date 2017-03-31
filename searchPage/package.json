@@ -1,6 +1,12 @@
 {
-  "devDependencies": {
-    "browser-sync": "^2.14.0",
-    "gulp": "^3.9.1"
-  }
+    "name": "searchPage",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "gulp"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.18.8",
+        "gulp": "^3.9.1"
+    }
 }

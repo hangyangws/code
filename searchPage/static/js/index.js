@@ -7,7 +7,6 @@
 ! function(win, doc, undefined) {
     'use strict';
     var $main = doc.querySelector('#main'),
-        // _user_obj = JSON.parse(decodeURI(win.location.href.split('?')[1])),
         _user_obj = (function() {
             var str = win.location.href.split('?')[1];
             if (str) {
@@ -62,7 +61,7 @@
                 .replace('RED', getRandom(0, 255).toFixed(0))
                 .replace('GREEN', getRandom(0, 255).toFixed(0))
                 .replace('BLUE', getRandom(0, 255).toFixed(0))
-                .replace('TRANS', Math.random());
+                .replace('TRANS', .4);
         },
         _dots = (function() { // 离子初始化
             var _l = _dot_number,
@@ -164,7 +163,7 @@
         SEARCH = {
             init: function() {
                 // 用户名
-                $main.querySelector('.js-name').innerHTML = this.getTime() + '，' + _user_obj.name;
+                $main.querySelector('.js-name').innerHTML = this.getTime() + (_user_obj.name ? '，' + _user_obj.name : '');
                 // 问候语编写
                 $main.querySelector('.js-greet').innerHTML = [
                     '星期日，明天就要上班了',

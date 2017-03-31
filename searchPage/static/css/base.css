@@ -1,77 +1,125 @@
 @charset 'utf-8';
 
 /**
- * Created by hangyangws(hangyangws@foxmail.com) in 2014-09-01.
- * [reset.css & base.css]
+ * base.css
+ * 航洋无声(hangyangws@foxmail.com、hangyangws.win、github.com/hangyangws、weibo.com/hangyangws)
+ */
+
+
+/*标准字体大小（rem参照对象）*/
+
+html {
+    font-size: 14px;
+}
+
+
+/**
+ * 当`body`宽度大于`html`宽度时，某些浏览器会出现内部滚动条，所以给`html、body`设置宽度100%。
+ * 取消部分浏览器点击有阴影。
+ * 优化移动端滚动事件。
  */
 
 html,
 body {
-    position: relative;
     width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
 }
 
+
+/**
+ * 移除常用标签的浏览器默认的`margin、padding`
+ * pre、code、legend、fieldset、blockquote……等其他标签不是很常用，所以本css都不会一一列举出来，为了简化。如果项目中用到，可以自己单独写。
+ */
+
+body,
 p,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+dl,
+dd,
+ul,
+ol,
 th,
 td,
-div,
-pre,
-body,
-code,
-form,
-input,
-legend,
 button,
 figure,
-fieldset,
+input,
 textarea,
-blockquote {
+form {
     margin: 0;
     padding: 0;
 }
 
-table {
-    border-spacing: 0;
+
+/*不同浏览器的input、select、textarea的盒子模型宽度计算方式不通，统一为最常见的content-box*/
+
+input,
+select,
+textarea {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
+
+/**
+ * `table`相邻单元格的边框间的距离设置为0。
+ * 设置`table`的边框为合并模式。
+ */
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+/**
+ * 移除浏览器部分元素的默认边框。
+ * acronym、fieldset……等其他标签不是很常用，所以本css都不会一一列举出来，为了简化。如果项目中用到，可以自己单独写。
+ */
+
 img,
-abbr,
 input,
 button,
-acronym,
-fieldset,
 textarea {
     border: none;
 }
+
+
+/*因为`input`默认不继承父元素的居中样式，所以让`input`元素继承父元素的文本居中方式*/
 
 input {
     text-align: inherit;
 }
 
+
+/*让`textarea`默认不可以放缩*/
+
 textarea {
     resize: none;
 }
 
+
+/**
+ * 因为部分浏览器默认的`q`标签的前后伪元素有多余样式，所以置空`q`标签前后伪元素。
+ * q标签不是很常见，如果开发者需要可以使用。
+/*
 q::before,
 q::after {
     content: '';
 }
+*/
 
 
 /**
- * 手动继承某些元素的某些属性
+ * 由于以下元素的部分属性没有继承父节点样式，所以声明这些元素的这些属性为父元素的属性。
+ * 取消这些元素的`outline`样式。
  */
 
 a,
@@ -98,11 +146,15 @@ optgroup {
 
 
 /**
- * body全局设置
+ * 如果绝对定位元素找不到被设置过定位信息的上级元素，那么此元素基于根节点定位，所以给`body`设置相对定位，让这些元素基于`body`定位。
+ * 设置网页基本字体颜色为`#666`(深灰色)。
+ * 设置网页背景颜色颜色为`#fff`（纯白色）。
+ * 使字体渲染更顺滑。
  */
 
 body {
-    font: 14px 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'STHeiti Light [STXihei]', 'Microsoft Yahei', sans-serif;
+    font: 1rem 'Helvetica Neue', Arial, 'Hiragino Sans GB', STHeiti, 'STHeiti Light [STXihei]', 'Microsoft Yahei', sans-serif;
+    position: relative;
     color: #666;
     background: #fff;
     -webkit-font-smoothing: antialiased;
@@ -110,16 +162,28 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-a,
-del,
-ins {
+
+/**
+ * 取消超链接元素的默认文字装饰（下划线）。
+ * 另外del、ins标签的中划线、下划线还是挺好的，就不去掉。
+ */
+
+a {
     text-decoration: none;
 }
+
+
+/**
+ * 开发中UI设计的列表都是和原生的样式差太多，所以直接给取消ol，ul默认列表样式。
+ */
 
 ol,
 ul {
     list-style: none;
 }
+
+
+/*使如下元素默认鼠标经过是`小手`的形状（一般表示可以点击，在PC端挺好）*/
 
 button,
 input[type='submit'],
@@ -127,15 +191,29 @@ input[type='button'] {
     cursor: pointer;
 }
 
+
+/*取消火狐浏览器部分版本`input`聚焦的时候默认的`padding、border`*/
+
 input::-moz-focus-inner {
     padding: 0;
     border: 0;
 }
 
 
-/**
- * placeholder
- */
+/*取消部分浏览器`input[type='number']`的默认样式*/
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+
+/*输入控件的`placeholder`颜色设置为`#999`（浅灰色）*/
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -158,528 +236,8 @@ textarea:-ms-input-placeholder {
 }
 
 
-/**
- * font
- */
+/*由于部分浏览器`template`直接显示出来，所以要隐藏`template`元素*/
 
-.fc3 {
-    color: #333;
-}
-
-.fc6 {
-    color: #666;
-}
-
-.fc9 {
-    color: #999;
-}
-
-.fcf {
-    color: #fff;
-}
-
-.bct {
-    background-color: transparent;
-}
-
-.bcf {
-    background-color: #fff;
-}
-
-.fs0 {
-    font-size: 0;
-}
-
-.fs12 {
-    font-size: 12px;
-}
-
-.fs14 {
-    font-size: 14px;
-}
-
-.fs16 {
-    font-size: 16px;
-}
-
-.fs18 {
-    font-size: 18px;
-}
-
-.fs20 {
-    font-size: 20px;
-}
-
-.fwb {
-    font-weight: 700;
-}
-
-.fwl {
-    font-weight: 100;
-}
-
-.ti2 {
-    text-indent: 2em;
-}
-
-.lh1 {
-    line-height: 1em;
-}
-
-
-/**
- * position
- */
-
-.tal {
-    text-align: left;
-}
-
-.tac {
-    text-align: center;
-}
-
-.tar {
-    text-align: right;
-}
-
-.bc {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.fl {
-    display: inline;
-    float: left;
-}
-
-.fr {
-    display: inline;
-    float: right;
-}
-
-.c {
-    zoom: 1;
-}
-
-.c::after {
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    content: '.';
-}
-
-.vat {
-    vertical-align: top;
-}
-
-.vam {
-    vertical-align: middle;
-}
-
-.vab {
-    vertical-align: bottom;
-}
-
-.pr {
-    position: relative;
-}
-
-.pa {
-    position: absolute;
-}
-
-.pf {
-    position: fixed;
-    /*chrome 内核 浏览器 position: fixed 防止抖动*/
-    -webkit-transform: translateZ(0);
-}
-
-.t0 {
-    top: 0;
-}
-
-.l0 {
-    left: 0;
-}
-
-.b0 {
-    bottom: 0;
-}
-
-.r0 {
-    right: 0;
-}
-
-.z1 {
-    z-index: 1;
-}
-
-.z2 {
-    z-index: 2;
-}
-
-.z3 {
-    z-index: 3;
-}
-
-.middle {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-}
-
-
-/**
- * width height
- */
-
-.w1 {
-    width: 100%;
-}
-
-.w10 {
-    width: 10px;
-}
-
-.w20 {
-    width: 20px;
-}
-
-.w30 {
-    width: 30px;
-}
-
-.w40 {
-    width: 40px;
-}
-
-.w50 {
-    width: 50px;
-}
-
-.w60 {
-    width: 60px;
-}
-
-.w70 {
-    width: 70px;
-}
-
-.w80 {
-    width: 80px;
-}
-
-.w90 {
-    width: 90px;
-}
-
-.w100 {
-    width: 100px;
-}
-
-.h1 {
-    height: 100%;
-}
-
-.h10 {
-    height: 10px;
-}
-
-.h20 {
-    height: 20px;
-}
-
-.h30 {
-    height: 30px;
-}
-
-.h40 {
-    height: 40px;
-}
-
-.h50 {
-    height: 50px;
-}
-
-.h60 {
-    height: 60px;
-}
-
-.h70 {
-    height: 70px;
-}
-
-.h80 {
-    height: 80px;
-}
-
-.h90 {
-    height: 90px;
-}
-
-.h100 {
-    height: 100px;
-}
-
-
-/**
- * margin padding
- */
-
-.m5 {
-    margin: 5px;
-}
-
-.m10 {
-    margin: 10px;
-}
-
-.m15 {
-    margin: 15px;
-}
-
-.m20 {
-    margin: 20px;
-}
-
-.mt5 {
-    margin-top: 5px;
-}
-
-.mt10 {
-    margin-top: 10px;
-}
-
-.mt15 {
-    margin-top: 15px;
-}
-
-.mt20 {
-    margin-top: 20px;
-}
-
-.mb5 {
-    margin-bottom: 5px;
-}
-
-.mb10 {
-    margin-bottom: 10px;
-}
-
-.mb15 {
-    margin-bottom: 15px;
-}
-
-.mb20 {
-    margin-bottom: 20px;
-}
-
-.ml5 {
-    margin-left: 5px;
-}
-
-.ml10 {
-    margin-left: 10px;
-}
-
-.ml15 {
-    margin-left: 15px;
-}
-
-.ml20 {
-    margin-left: 20px;
-}
-
-.mr5 {
-    margin-right: 5px;
-}
-
-.mr10 {
-    margin-right: 10px;
-}
-
-.mr15 {
-    margin-right: 15px;
-}
-
-.mr20 {
-    margin-right: 20px;
-}
-
-.p5 {
-    padding: 5px;
-}
-
-.p10 {
-    padding: 10px;
-}
-
-.p15 {
-    padding: 15px;
-}
-
-.p20 {
-    padding: 20px;
-}
-
-.pt5 {
-    padding-top: 5px;
-}
-
-.pt10 {
-    padding-top: 10px;
-}
-
-.pt15 {
-    padding-top: 15px;
-}
-
-.pt20 {
-    padding-top: 20px;
-}
-
-.pb5 {
-    padding-bottom: 5px;
-}
-
-.pb10 {
-    padding-bottom: 10px;
-}
-
-.pb15 {
-    padding-bottom: 15px;
-}
-
-.pb20 {
-    padding-bottom: 20px;
-}
-
-.pl5 {
-    padding-left: 5px;
-}
-
-.pl10 {
-    padding-left: 10px;
-}
-
-.pl15 {
-    padding-left: 15px;
-}
-
-.pl20 {
-    padding-left: 20px;
-}
-
-.pr5 {
-    padding-right: 5px;
-}
-
-.pr10 {
-    padding-right: 10px;
-}
-
-.pr15 {
-    padding-right: 15px;
-}
-
-.pr20 {
-    padding-right: 20px;
-}
-
-
-/**
- * display
- */
-
-.none,
 template {
     display: none;
-}
-
-.hidden {
-    visibility: hidden;
-}
-
-.db {
-    display: block;
-}
-
-.dlb {
-    display: inline-block;
-}
-
-.dl {
-    display: inline;
-}
-
-
-/**
- * others
- */
-
-.cp {
-    cursor: pointer;
-}
-
-.cd {
-    cursor: default;
-}
-
-.zin {
-    cursor: zoom-in;
-    -webkit-cursor: zoom-in;
-}
-
-.zout {
-    cursor: zoom-out;
-    -webkit-cursor: zoom-out;
-}
-
-.ofh {
-    overflow: hidden;
-}
-
-.bb {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.ts4 {
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-}
-
-.to {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.r4 {
-    border-radius: 4px;
-}
-
-.r50 {
-    border-radius: 50%;
-}
-
-.top-middle {
-    -webkit-transform: -webkit-translateY(-50%);
-    -moz-transform: -moz-translateY(-50%);
-    -o-transform: -o-translateY(-50%);
-    transform: translateY(-50%);
-}
-
-.top-50 {
-    position: relative;
-    top: 50%;
 }

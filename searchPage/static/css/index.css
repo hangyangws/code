@@ -3,6 +3,14 @@
 html,
 body {
     height: 100%;
+    overflow: hidden;
+}
+
+
+/*画布*/
+
+.canvas {
+    display: block;
 }
 
 
@@ -97,7 +105,6 @@ body {
         font-size: 4rem;
         letter-spacing: 0;
     }
-
 }
 
 @media screen and (max-width: 800px) {

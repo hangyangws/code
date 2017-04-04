@@ -213,26 +213,26 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/*输入控件的`placeholder`颜色设置为`#999`（浅灰色）*/
+/*输入控件的`placeholder`颜色设置为`#ccc`（浅灰色）*/
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-    color: #999;
+    color: #ccc;
 }
 
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-    color: #999;
+    color: #ccc;
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
-    color: #999;
+    color: #ccc;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-    color: #999;
+    color: #ccc;
 }
 
 

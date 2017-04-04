@@ -80,12 +80,12 @@
 /*动画*/
 
 .bg-animate {
-    -webkit-animation: bg-generator 10s ease infinite;
-    animation: bg-generator 10s ease infinite;
-    background: -webkit-linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .4), #ffc);
-    background: -o-linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .4), #ffc);
-    background: linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .4), #ffc);
-    background: -moz-linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .4), #ffc);
+    -webkit-animation: bg-generator 20s ease-in infinite;
+    animation: bg-generator 20s ease-in infinite;
+    background: -webkit-linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .2), #ffc);
+    background: -o-linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .2), #ffc);
+    background: linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .2), #ffc);
+    background: -moz-linear-gradient(30deg, rgba(255, 255, 255, .1), rgba(255, 200, 200, .2), #ffc);
     background-size: 800% 800%;
 }
 

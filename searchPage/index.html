@@ -6,8 +6,6 @@
     <title>searchPage</title>
     <meta name="description" content="个性化搜索界面,谷歌搜索,百度搜索,hangyangws,searchPage" />
     <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="robots" content="index" />
     <link rel="icon" sizes="any" href="./static/img/icon.png" />
     <link rel="stylesheet" href="./static/css/base.css" />
     <link rel="stylesheet" href="./static/css/public.css" />
@@ -15,7 +13,7 @@
 </head>
 
 <body>
-    <canvas id="bgAnimate"></canvas>
+    <canvas id="bgAnimate" class="canvas"></canvas>
     <!-- 加上 bg-animate 开启动画-->
     <main id="main" class="main">
         <header class="user-wrap">
@@ -30,6 +28,8 @@
             </div>
         </section>
     </main>
+    <script src="./static/js/public.js"></script>
+    <script src="./static/js/animate_bg.js"></script>
     <script src="./static/js/index.js"></script>
 </body>
 

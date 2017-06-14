@@ -2,177 +2,189 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>HomeWork - ThoughtWorks</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
-    <meta name="robots" content="index" />
-    <meta name="screen-orientation" content="portrait">
-    <link rel="icon" sizes="any" href="./static/img/favicon.png" />
-    <link rel="stylesheet" href="./static/dist/css/all.css" />
-    <!--[if lt IE 10]>
-        <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!--[if lt IE 9]>
-        <script>window.location.href = 'ie.html';</script>
-    <![endif]-->
+  <meta charset="UTF-8" />
+  <title>HomeWork - ThoughtWorks</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+  <meta name="robots" content="index" />
+  <meta name="screen-orientation" content="portrait">
+  <link rel="icon" sizes="any" href="./static/img/favicon.png" />
+  <link rel="stylesheet" href="./static/dist/css/all.css" />
+  <!--[if lt IE 10]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script>window.location.href = 'ie.html';</script>
+  <![endif]-->
 </head>
 
 <body class="fc3">
-    <header class="header">
-        <div class="m-width c">
-            <!-- logo -->
-            <a class="fs20"><span class="fwb">Thought</span>works</a>
-            <!-- user info -->
-            <div class="fr">
-                <span class="dlb mr20">Signed in as <a class="sub-line" href="#">Hangyagnws</a></span>
-                <span class="cp"><i class="i-signout vam mr5"></i><a class="sub-line vam dlb">Sign out</a></span>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="m-width mt20">
-            <!-- nav -->
-            <div class="c">
-                <h3 class="nav-tit dlb">Cruise</h3>
-                <nav class="nav tar fr">
-                    <a class="ts4 cp">DASHBOARD</a>
-                    <a class="ts4 cp">MY CRUISWE</a>
-                    <a class="ts4 nav-active cp">AGENTS</a>
-                    <a class="ts4 cp">HELP</a>
-                </nav>
-            </div>
-            <!-- main -->
-            <div class="main-wrap">
-                <!-- filter condition  -->
-                <dl class="filter p10">
-                    <dt class="fcf fs20 dlb">Agents</dt>
-                    <dd class="filter-list dlb tac">
-                        <span class="cp">All</span>
-                        <span class="filter-active cp">Physical</span>
-                        <span class="cp">Virtual</span>
-                    </dd>
-                </dl>
-                <!-- main content -->
-                <div class="main-con pr c">
-                    <!-- main section -->
-                    <section class="main-sec pa l0 t0 b0">
-                        <ul id="listWrap" class="p10">
-                            <li class="js-list-item list-item p10 mb10 r4 h50 pr list-denied">
-                                <figure class="ofh r50 w50 h50 pr"><img class="w1 middle" src="./static/img/title.jpg" alt="header-iocn" /></figure>
-                                <div class="js-list-con list-con pa">
-                                    <!-- top section -->
-                                    <div class="list-c-top">
-                                        <h3 class="dlb fwb mr10">section.name</h3>
-                                        <ul class="dlb">
-                                            <li class="left-line dlb fwb">idle</li>
-                                            <li class="left-line dlb fwb">192.168.1.101</li>
-                                            <li class="left-line dlb">hangyangws</li>
-                                        </ul>
-                                    </div>
-                                    <!-- bottom section -->
-                                    <div class="list-resourch c">
-                                        <span class="js-add-res-trigger cp"><i class="fs16 fwb dlb mr5">+</i><a class="sub-line">Specify Resources</a></span>
-                                        <dl class="dlb left-line ml10">
-                                            <dt class="dlb">Resources:</dt>
-                                            <dd class="dlb">
-                                                <ul class="js-res-container">
-                                                    <li class="js-resource dlb mr15">php<i class="js-del-resource i-del cp ml5"></i></li>
-                                                    <li class="js-resource dlb mr15">mysql<i class="js-del-resource i-del cp ml5"></i></li>
-                                                </ul>
-                                            </dd>
-                                        </dl>
-                                        <span class="js-deny list-deny fr cp"><i class="i-deny mr5"></i><a class="sub-line">Deny</a></span>
-                                    </div>
-                                    <!-- add resources -->
-                                    <div class="js-add-res-dom add-resources pa p10 none">
-                                        <p>(separate multiple resources name with commas)</p>
-                                        <input class="js-res-val res-val w1 bb pl5 pr5 mt5" type="text" />
-                                        <div class="add-res-btn mt10">
-                                            <button class="js-add-res">Add resources</button>
-                                            <button class="js-close-add-res">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="js-list-item list-item p10 mb10 r4 h50 pr">
-                                <figure class="ofh r50 w50 h50 pr"><img class="w1 middle" src="./static/img/title.jpg" alt="header-iocn" /></figure>
-                                <div class="js-list-con list-con pa">
-                                    <!-- top section -->
-                                    <div class="list-c-top">
-                                        <h3 class="dlb fwb mr10">section.name</h3>
-                                        <ul class="dlb">
-                                            <li class="left-line dlb fwb">idle</li>
-                                            <li class="left-line dlb fwb">192.168.1.101</li>
-                                            <li class="left-line dlb">hangyangws</li>
-                                        </ul>
-                                    </div>
-                                    <!-- bottom section -->
-                                    <div class="list-resourch c">
-                                        <span class="js-add-res-trigger cp"><i class="fs16 fwb dlb mr5">+</i><a class="sub-line">Specify Resources</a></span>
-                                        <dl class="dlb left-line ml10">
-                                            <dt class="dlb">Resources:</dt>
-                                            <dd class="dlb">
-                                                <ul class="js-res-container">
-                                                    <li class="js-resource dlb mr15">php<i class="js-del-resource i-del cp ml5"></i></li>
-                                                    <li class="js-resource dlb mr15">mysql<i class="js-del-resource i-del cp ml5"></i></li>
-                                                </ul>
-                                            </dd>
-                                        </dl>
-                                        <span class="js-deny list-deny fr cp"><i class="i-deny mr5"></i><a class="sub-line">Deny</a></span>
-                                    </div>
-                                    <!-- add resources -->
-                                    <div class="js-add-res-dom add-resources pa p10 none">
-                                        <p>(separate multiple resources name with commas)</p>
-                                        <input class="js-res-val res-val w1 bb pl5 pr5 mt5" type="text" />
-                                        <div class="add-res-btn mt10">
-                                            <button class="js-add-res">Add resources</button>
-                                            <button class="js-close-add-res">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
+  <header class="header">
+    <div class="m-width c">
+      <!-- logo -->
+      <a class="fs20"><span class="fwb">Thought</span>works</a>
+      <!-- user info -->
+      <div class="fr">
+        <span class="dlb mr20">Signed in as <a class="sub-line" href="#">Hangyagnws</a></span>
+        <span class="cp"><i class="i-signout vam mr5"></i><a class="sub-line vam dlb">Sign out</a></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="m-width mt20">
+      <!-- nav -->
+      <div class="c">
+        <h3 class="nav-tit dlb">Cruise</h3>
+        <nav class="nav tar fr">
+          <a class="ts4 cp">DASHBOARD</a>
+          <a class="ts4 cp">MY CRUISWE</a>
+          <a class="ts4 nav-active cp">AGENTS</a>
+          <a class="ts4 cp">HELP</a>
+        </nav>
+      </div>
+      <!-- main -->
+      <div class="main-wrap">
+        <!-- filter condition  -->
+        <dl class="filter p10">
+          <dt class="fcf fs20 dlb">Agents</dt>
+          <dd class="filter-list dlb tac">
+            <span class="cp">All</span>
+            <span class="filter-active cp">Physical</span>
+            <span class="cp">Virtual</span>
+          </dd>
+        </dl>
+        <!-- main content -->
+        <div class="main-con pr c">
+          <!-- main section -->
+          <section class="main-sec pa l0 t0 b0">
+            <ul id="listWrap" class="p10">
+              <li class="js-list-item list-item p10 mb10 r4 h50 pr list-denied">
+                <figure class="ofh r50 w50 h50 pr">
+                  <img class="w1 middle" src="./static/img/title.jpg" alt="header-iocn" />
+                </figure>
+                <div class="js-list-con list-con pa">
+                  <!-- top section -->
+                  <div class="list-c-top">
+                    <h3 class="dlb fwb mr10">section.name</h3>
+                    <ul class="dlb">
+                      <li class="left-line dlb fwb">idle</li>
+                      <li class="left-line dlb fwb">192.168.1.101</li>
+                      <li class="left-line dlb">hangyangws</li>
+                    </ul>
+                  </div>
+                  <!-- bottom section -->
+                  <div class="list-resourch c">
+                    <span class="js-add-res-trigger cp">
+                      <i class="fs16 fwb dlb mr5">+</i><a class="sub-line">Specify Resources</a>
+                    </span>
+                    <dl class="dlb left-line ml10">
+                      <dt class="dlb">Resources:</dt>
+                      <dd class="dlb">
+                        <ul class="js-res-container">
+                          <li class="js-resource dlb mr15">php<i class="js-del-resource i-del cp ml5"></i></li>
+                          <li class="js-resource dlb mr15">mysql<i class="js-del-resource i-del cp ml5"></i></li>
                         </ul>
-                    </section>
-                    <!-- aside -->
-                    <aside class="aside h1 fr">
-                        <div class="list-sec list-sec-2">
-                            <h4 class="fs20 pb5">Summary</h4>
-                            <ul>
-                                <li>
-                                    <span>one</span>
-                                    <span>1</span>
-                                </li>
-                                <li>
-                                    <span>two</span>
-                                    <span>2</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list-sec">
-                            <h4 class="fs20 pb5">History</h4>
-                            <ul>
-                                <li class="to">section/one</li>
-                                <li class="to">section/two</li>
-                                <li class="to">section/three</li>
-                                <li class="to">section/four</li>
-                            </ul>
-                        </div>
-                    </aside>
+                      </dd>
+                    </dl>
+                    <span class="js-deny list-deny fr cp">
+                      <i class="i-deny mr5"></i><a class="sub-line">Deny</a>
+                    </span>
+                  </div>
+                  <!-- add resources -->
+                  <div class="js-add-res-dom add-resources pa p10 none">
+                    <p>(separate multiple resources name with commas)</p>
+                    <input class="js-res-val res-val w1 bb pl5 pr5 mt5" type="text" />
+                    <div class="add-res-btn mt10">
+                      <button class="js-add-res">Add resources</button>
+                      <button class="js-close-add-res">Close</button>
+                    </div>
+                  </div>
                 </div>
+              </li>
+              <li class="js-list-item list-item p10 mb10 r4 h50 pr">
+                <figure class="ofh r50 w50 h50 pr">
+                  <img class="w1 middle" src="./static/img/title.jpg" alt="header-iocn" />
+                </figure>
+                <div class="js-list-con list-con pa">
+                  <!-- top section -->
+                  <div class="list-c-top">
+                    <h3 class="dlb fwb mr10">section.name</h3>
+                    <ul class="dlb">
+                      <li class="left-line dlb fwb">idle</li>
+                      <li class="left-line dlb fwb">192.168.1.101</li>
+                      <li class="left-line dlb">hangyangws</li>
+                    </ul>
+                  </div>
+                  <!-- bottom section -->
+                  <div class="list-resourch c">
+                    <span class="js-add-res-trigger cp">
+                      <i class="fs16 fwb dlb mr5">+</i><a class="sub-line">Specify Resources</a>
+                    </span>
+                    <dl class="dlb left-line ml10">
+                      <dt class="dlb">Resources:</dt>
+                      <dd class="dlb">
+                        <ul class="js-res-container">
+                          <li class="js-resource dlb mr15">php<i class="js-del-resource i-del cp ml5"></i></li>
+                          <li class="js-resource dlb mr15">mysql<i class="js-del-resource i-del cp ml5"></i></li>
+                        </ul>
+                      </dd>
+                    </dl>
+                    <span class="js-deny list-deny fr cp">
+                      <i class="i-deny mr5"></i><a class="sub-line">Deny</a>
+                    </span>
+                  </div>
+                  <!-- add resources -->
+                  <div class="js-add-res-dom add-resources pa p10 none">
+                    <p>(separate multiple resources name with commas)</p>
+                    <input class="js-res-val res-val w1 bb pl5 pr5 mt5" type="text" />
+                    <div class="add-res-btn mt10">
+                      <button class="js-add-res">Add resources</button>
+                      <button class="js-close-add-res">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!-- aside -->
+          <aside class="aside h1 fr">
+            <div class="list-sec list-sec-2">
+              <h4 class="fs20 pb5">Summary</h4>
+              <ul>
+                <li>
+                  <span>one</span>
+                  <span>1</span>
+                </li>
+                <li>
+                  <span>two</span>
+                  <span>2</span>
+                </li>
+              </ul>
             </div>
+            <div class="list-sec">
+              <h4 class="fs20 pb5">History</h4>
+              <ul>
+                <li class="to">section/one</li>
+                <li class="to">section/two</li>
+                <li class="to">section/three</li>
+                <li class="to">section/four</li>
+              </ul>
+            </div>
+          </aside>
         </div>
-    </main>
-    <footer>
-        <div class="m-width mt10">
-            <p>Copyright: Thoughtworks Inc.</p>
-        </div>
-    </footer>
-    <!-- template -->
-    <template id="tpRes">
-        <li class="js-resource dlb mr15">${resName}<i class="js-del-resource i-del cp ml5"></i></li>
-    </template>
-    <script src="./static/dist/js/all.js"></script>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="m-width mt10">
+      <p>Copyright: Thoughtworks Inc.</p>
+    </div>
+  </footer>
+  <!-- template -->
+  <template id="tpRes">
+    <li class="js-resource dlb mr15">${resName}<i class="js-del-resource i-del cp ml5"></i></li>
+  </template>
+  <script src="./static/dist/js/all.js"></script>
 </body>
 
 </html>

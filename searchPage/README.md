@@ -10,11 +10,11 @@
 - 输入[http://hangyangws.win/myCode/searchPage/?name=userName&animate=true](http://hangyangws.win/myCode/searchPage/?name=userName&animate=true) 地址。
 - 重启浏览器，就能看到效果啦。
 - 使用
-    1. 输入框输入搜索内容，并且用空格分开搜索关键字
-    1. 然后回车
-    1. 敲击一下回车是搜索百度
-    1. 敲击二下回车是搜索谷歌
-    1. 或者点击Chrome、Baidu的Logo
+  1. 输入框输入搜索内容，并且用空格分开搜索关键字
+  1. 然后回车
+  1. 敲击一下回车是搜索百度
+  1. 敲击二下回车是搜索谷歌
+  1. 或者点击Chrome、Baidu的Logo
 
 
 ### 注意

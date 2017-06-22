@@ -2,8 +2,8 @@
 .m-nav,
 .m-page,
 .m-act {
-    margin-top: 10px;
-    padding: 0 10px;
+  margin-top: 10px;
+  padding: 0 10px;
 }
 
 
@@ -11,183 +11,183 @@
 
 .m-nav,
 .m-sea {
-    line-height: 29px;
-    height: 29px;
-    border-bottom: 1px solid #e0e0e0;
+  line-height: 29px;
+  height: 29px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .m-sea {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .m-nav li:after {
-    margin: 0 10px;
-    content: '>';
+  margin: 0 10px;
+  content: '>';
 }
 
 .m-nav li:last-child:after {
-    display: none;
+  display: none;
 }
 
 
 /*文章列表*/
 
 .m-act li {
-    line-height: 32px;
-    position: relative;
-    border-bottom: 1px dashed #e0e0e0;
+  line-height: 32px;
+  position: relative;
+  border-bottom: 1px dashed #e0e0e0;
 }
 
 .m-act li:nth-child(5n) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .m-act li a {
-    font-size: 15px;
-    width: 650px;
-    text-indent: 10px;
+  font-size: 15px;
+  width: 650px;
+  text-indent: 10px;
 }
 
 .m-act li span {
-    font-size: 12px;
-    width: 100px;
-    text-align: center;
+  font-size: 12px;
+  width: 100px;
+  text-align: center;
 }
 
 .m-act li:last-child,
 .m-act li:nth-child(5n) {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 
 /*文章*/
 
 .a-tit {
-    margin-bottom: 20px;
-    padding: 20px 0 10px 0;
-    border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .a-tit h2,
 .a-tit dl {
-    font-weight: 500;
-    line-height: 30px;
-    height: 30px;
-    text-align: center;
-    color: #444;
+  font-weight: 500;
+  line-height: 30px;
+  height: 30px;
+  text-align: center;
+  color: #444;
 }
 
 .a-tit dt,
 .a-tit dd {
-    font-size: 13px;
-    display: inline-block;
-    color: #666;
+  font-size: 13px;
+  display: inline-block;
+  color: #666;
 }
 
 .a-tit dt:after {
-    content: ' :';
+  content: ' :';
 }
 
 .a-tit dd {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .a-con {
-    font-size: 15px;
-    line-height: 30px;
-    color: #444;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444;
 }
 
 .a-con p {
-    margin: 20px 0;
-    text-indent: 30px;
+  margin: 20px 0;
+  text-indent: 30px;
 }
 
 .a-con img {
-    display: block;
-    max-width: 640px;
-    margin: 0 auto;
+  display: block;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 
 /*分页*/
 
 .m-page {
-    border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
 }
 
 .m-page li {
-    line-height: 26px;
-    height: 30px;
-    margin: 10px 10px 0 0;
-    cursor: default;
+  line-height: 26px;
+  height: 30px;
+  margin: 10px 10px 0 0;
+  cursor: default;
 }
 
 .m-page li a {
-    line-height: 24px;
-    display: block;
-    height: 24px;
-    padding: 0 8px;
-    border: 1px solid #e0e0e0;
-    border-radius: 4px;
+  line-height: 24px;
+  display: block;
+  height: 24px;
+  padding: 0 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
 }
 
 .m-page li a:hover,
 .m-act li:hover,
 .m-type > li {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .m-act li:before {
-    position: absolute;
-    top: 16px;
-    left: 0;
-    width: 2px;
-    height: 2px;
-    content: '';
-    background-color: #999;
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  content: '';
+  background-color: #999;
 }
 
 
 /*分类*/
 
 .m-type {
-    margin-top: 39px;
-    padding-left: 10px;
-    border-left: 1px dashed #e0e0e0;
+  margin-top: 39px;
+  padding-left: 10px;
+  border-left: 1px dashed #e0e0e0;
 }
 
 .m-type > li {
-    font-size: 15px;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .m-type > li ul {
-    font-size: 14px;
-    margin: 4px 0 0 8px;
+  font-size: 14px;
+  margin: 4px 0 0 8px;
 }
 
 .m-type li li:before {
-    position: relative;
-    top: -2px;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    content: '';
-    border-bottom: 1px dashed #666;
-    border-left: 1px dashed #666;
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  content: '';
+  border-bottom: 1px dashed #666;
+  border-left: 1px dashed #666;
 }
 
 
 /*public*/
 
 .a {
-    color: #666;
+  color: #666;
 }
 
 .a:hover {
-    color: #333;
-    text-shadow: 1px 1px 5px #ccc;
+  color: #333;
+  text-shadow: 1px 1px 5px #ccc;
 }

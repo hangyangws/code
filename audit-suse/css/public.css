@@ -1,33 +1,33 @@
 @charset 'utf-8';
 .transtion {
-    -webkit-transition: all .4s ease-out;
-    -moz-transition: all .4s ease-out;
-    -o-transition: all .4s ease-out;
-    transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
 }
 
 .clear {
-    zoom: 1;
+  zoom: 1;
 }
 
 .clear:after {
-    display: block;
-    visibility: hidden;
-    clear: both;
-    height: 0;
-    content: '.';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: '.';
 }
 
 .left {
-    float: left;
+  float: left;
 }
 
 .right {
-    float: right;
+  float: right;
 }
 
 .t-over {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

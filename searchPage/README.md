@@ -7,7 +7,7 @@
 - 打开浏览器设置
 - 找到启动时，浏览器开发新的网页设置
 - 找到“打开特定网页或一组网页”，点击设置网页。
-- 输入[http://hangyangws.win/myCode/searchPage/?name=userName&animate=true](http://hangyangws.win/myCode/searchPage/?name=userName&animate=true) 地址。
+- 输入[http://hangyangws.win/code/searchPage?name=userName&animate=true](http://hangyangws.win/code/searchPage?name=userName&animate=true) 地址。
 - 重启浏览器，就能看到效果啦。
 - 使用
   1. 输入框输入搜索内容，并且用空格分开搜索关键字
